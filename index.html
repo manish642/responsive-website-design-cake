@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Complete Responsive Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h2 class="logo">Cake<span>.</span></h2>
+		<div class="toggleMenu" onclick="toggleMenu()"></div>
+		<ul class="nav-wrap">
+			<li><a href="#banner">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>Giving is better than receiving</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			<a href="#" class="btn">Order Now</a>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col">
+				<h3 class="tetxtTitle"><span>A</span>bout Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+			</div>
+			<div class="col">
+				<div class="imgBox">
+					<img src="images/menu-3.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="menu" id="menu">
+		<div class="title">
+			<h3 class="tetxtTitle">Our <span>M</span>enu</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-1.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-5.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-2.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-3.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-4.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/menu-5.jpg">
+				</div>
+				<div class="label">
+					<h4>Special Something</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials" id="testimonials">
+		<div class="title">
+			<h3 class="tetxtTitle"><span>T</span>estimonials</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/team-3.jpg">
+				</div>
+				<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<h2 class="name">Someone Special</h2>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/team-4.jpg">
+				</div>
+				<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<h2 class="name">Someone Special</h2>
+			</div>
+			<div class="box">
+				<div class="imgBox">
+					<img src="images/team-5.jpg">
+				</div>
+				<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<h2 class="name">Someone Special</h2>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="contact" id="contact">
+		<div class="title contactText">
+			<h3 class="tetxtTitle"><span>C</span>ontact Us</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="form">
+			<div class="inputBox">
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="inputBox">
+				<input type="text" placeholder="Email">
+			</div>
+			<div class="inputBox">
+				<textarea placeholder="Message"></textarea>
+			</div>
+			<div class="inputBox">
+				<input type="submit" value="Send" class="btn">
+			</div>
+		</div>
+	</section>
+
+	<div class="footer">
+		<p>&copy; Copyright 2021 | Created by <span>Manish Mahato</span></p>
+	</div>
+
+
+	<script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header=document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY>0);
+		})
+
+
+		function toggleMenu(){
+			var toggle = document.querySelector('.toggleMenu');
+			var menu = document.querySelector('.nav-wrap');
+			toggle.classList.toggle('active');
+			menu.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

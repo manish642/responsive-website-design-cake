@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+:root{
+	--white: #fff;
+	--btncolor: #330002;
+	--text-color: #111;
+}
+body{
+	min-height: 1000px;
+}
+p{
+	font-size: 1em;
+	color: var(--text-color);
+}
+a{
+	text-decoration: none;
+}
+.banner{
+	width: 100%;
+	position: relative;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/bg.jpg');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .content{
+	max-width: 900px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.banner .content h2{
+	font-size: 3em;
+	color: var(--white);
+	font-weight: 700;
+}
+.banner .content p{
+	color: var(--white);
+	font-size: 1em;
+	font-weight: 300;
+}
+.btn{
+	background-color: var(--btncolor);
+	padding: 10px 30px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1em;
+	color: var(--white);
+	letter-spacing: 3px;
+	margin-top: 20px;
+	transition: .5s;
+}
+.btn:hover{
+	letter-spacing: 6px;
+}
+header{
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: .5s;
+}
+header .logo{
+	color: #fff;
+}
+.tetxtTitle span{
+	color: var(--btncolor);
+	font-size: 2em;
+	font-weight: 700;
+}
+header .nav-wrap{
+	position: relative;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+header .nav-wrap li{
+	margin: 0px 8px;
+}
+header .nav-wrap li a{
+	color: var(--white);
+	font-size: 1.2em;
+}
+header .nav-wrap li a:hover{
+	color: var(--btncolor);
+}
+header.sticky{
+	background: var(--white);
+	padding: 10px 50px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header.sticky .logo{
+	color: var(--text-color);
+}
+header.sticky .nav-wrap li a{
+	color: var(--text-color);
+}
+
+section{
+	padding: 100px;
+}
+.row{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.col{
+	width: 48%;
+	position: relative;
+	margin: 0px 10px;
+}
+.titleText{
+	font-size: 1.6em;
+	font-weight: 400;
+}
+.row .col .imgBox{
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+.row .col .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.col p{
+	text-align: justify;
+}
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.menu .content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.menu .content .box{
+	width: 340px;
+	margin: 20px;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, .7);
+}
+.menu .content .box .imgBox{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.menu .content .box .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.label{
+	padding: 12px;
+}
+.testimonials .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.testimonials .content .box{
+	width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 50%);
+}
+.content .box .imgBox{
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.content .box .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.content .box  .name{
+	color: var(--btncolor);
+	font-size: 1.2em;
+}
+.content .box .para{
+	font-style: italic;
+	margin: 20px 0;
+}
+
+
+.contact{
+	min-height: 400px;
+	background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../images/bg2.jpg');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contact .form{
+	width: 500px;
+	background: var(--white);
+	box-shadow: 0 15px 50px rgba(0, 0, 0, .1);
+	padding: 30px;
+	margin-top: 30px;
+}
+.form .inputBox{
+	width: 100%;
+	margin-top: 8px;
+}
+.form .inputBox input,.form .inputBox textarea{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	color: var(--text-color);
+	resize: none;
+}
+.contactText, .contactText p{
+	color: var(--white);
+}
+.form input[type="submit"]{
+	color: var(--white);
+	border: 0;
+	outline: none;
+	max-width: 100px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.footer{
+	padding: 20px;
+	text-align: center;
+	border-top: 5px solid var(--white);
+}
+
+
+@media (max-width:  991px) {
+	.row{
+		flex-direction: column;
+	}
+	.col{
+		width: 100%;
+	}
+	.row .col .imgBox{
+    	height: 400px;
+    	margin-top: 20px;
+	} 
+	section{
+		padding: 20px;
+	}
+
+	header .nav-wrap{
+		display: none;
+	}
+	.toggleMenu{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url('../images/menu.png');
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	header.sticky .toggleMenu{
+		filter: invert(1);
+	}
+	.toggleMenu.active{
+		background: url('../images/close.png');
+		background-size: 25px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	header{
+		padding: 10px 40px;
+	}
+	header .nav-wrap.active{
+		width: 100%;
+		height: 100%;
+		background: var(--white);
+		position: fixed;
+		top: 60px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	header .nav-wrap.active li a{
+		color: var(--text-color);
+	}
+	header .nav-wrap li{
+    	margin-top: 10px;
+	}
+
+}
+
+@media (max-width:  720px) {
+	.contact .form {
+	    width: 340px;
+	}
+}
